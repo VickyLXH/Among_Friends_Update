@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Liftable
+  - Pushable
+  - Throwable
+  - WindZone
+  - Elevator
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Platforms
+  - Boxes
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 963388297
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Buttons
+    uniqueID: 109608317
+    locked: 0
+  - name: LevelWalls
+    uniqueID: 1905638085
+    locked: 0
+  - name: Boxes
+    uniqueID: 420617963
+    locked: 0
+  - name: Pointer
+    uniqueID: 2262064101
+    locked: 0
