@@ -1501,7 +1501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &733185869
 Transform:
   m_ObjectHideFlags: 0
@@ -23496,6 +23496,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 986543457159646526, guid: 45ef7a91bca384846978b9a3e22c6d5a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1045646617}
+    - targetCorrespondingSourceObject: {fileID: 7649288742915092104, guid: 45ef7a91bca384846978b9a3e22c6d5a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1275641590}
   m_SourcePrefab: {fileID: 100100000, guid: 45ef7a91bca384846978b9a3e22c6d5a, type: 3}
 --- !u!1 &1227354758
 GameObject:
@@ -23651,6 +23654,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8753548, y: 8.875728}
   m_EdgeRadius: 0
+--- !u!1 &1275641586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7649288742915092104, guid: 45ef7a91bca384846978b9a3e22c6d5a, type: 3}
+  m_PrefabInstance: {fileID: 1215956533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!19719996 &1275641590
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275641586}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &1325884519
 GameObject:
   m_ObjectHideFlags: 0
@@ -23695,11 +23739,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
       propertyPath: hangTime
-      value: 0.05
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
       propertyPath: jumpForce
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
+      propertyPath: acceleration
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
       propertyPath: groundLayer.m_Bits
