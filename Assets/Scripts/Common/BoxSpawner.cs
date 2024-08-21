@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;   
 using UnityEngine;
@@ -7,28 +8,64 @@ public class BoxSpawner : MonoBehaviour
     public GameObject box;
     public float spawnHeight;
 
-    private GameObject anotherBox;
-    
+    public GameObject anotherBox;
+    bool QPressed = false;
+
+    private void Awake()
+    {
+        PlayerInteraction.trySpawn += PlayerInteraction_trySpawn;
+    }
+
+    private void PlayerInteraction_trySpawn()
+    {
+        QPressed = true;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        TriggerSpawnBox(collision);
+    }
 
-        if (collision.transform.CompareTag("Player"))
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        TriggerSpawnBox(collision);
+
+    }
+
+    private void TriggerSpawnBox(Collider2D collision)
+    {
+        if (collision.transform.CompareTag("Player") && QPressed)
         {
-            if (anotherBox != null) 
+            QPressed = false;
+            Debug.Log("11111111111111111111111111111111111111111111111111");
+            if (anotherBox == null)
             {
-                GameObject.Destroy(anotherBox);
-                anotherBox = null;
+                Vector2 spawnPosition = transform.position + new Vector3(0, spawnHeight, 0);
+                GameObject newObject = Instantiate(box, spawnPosition, Quaternion.identity);
+                Box newBox = newObject.GetComponent<Box>();
+                newBox.SetSpawner(this);
             }
+            else
+            {
+                if (anotherBox.transform.parent && anotherBox.transform.parent.CompareTag("Player"))
+                {
 
-            Vector2 spawnPosition = transform.position + new Vector3(0, spawnHeight, 0);
-            GameObject newObject= Instantiate(box, spawnPosition, Quaternion.identity);
-            Box newBox= newObject.GetComponent<Box>();
-            newBox.SetSpawner(this);
-            
+                }
+                else
+                {
+                    GameObject.Destroy(anotherBox);
+                    anotherBox = null;
+                    Vector2 spawnPosition = transform.position + new Vector3(0, spawnHeight, 0);
+                    GameObject newObject = Instantiate(box, spawnPosition, Quaternion.identity);
+                    Box newBox = newObject.GetComponent<Box>();
+                    newBox.SetSpawner(this);
+                }
+            }
 
         }
     }
+
+   
 
     public void SetAnotherBox(GameObject gameObject)
     {
