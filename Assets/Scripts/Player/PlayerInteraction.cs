@@ -59,9 +59,6 @@ public class PlayerInteraction : MonoBehaviour
             tryExit?.Invoke();
             boxLifted?.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Q)) { 
-            trySpawn?.Invoke();
-        }
     }
 
     private void FlipAllSpriteBack()
