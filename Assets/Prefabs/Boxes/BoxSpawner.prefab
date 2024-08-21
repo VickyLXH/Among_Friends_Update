@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6783988960025330109}
   - component: {fileID: 5894861845617381990}
   - component: {fileID: 3945167912812594332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoxSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   box: {fileID: 4256294395898403860, guid: 88b5b9e9edd42f54794e36e9928a4ddb, type: 3}
   spawnHeight: 5
+  anotherBox: {fileID: 0}
 --- !u!212 &6783988960025330109
 SpriteRenderer:
   m_ObjectHideFlags: 0

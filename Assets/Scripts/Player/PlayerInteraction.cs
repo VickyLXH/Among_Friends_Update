@@ -21,6 +21,7 @@ public class PlayerInteraction : MonoBehaviour
     private PlayerAudio playerAudio;
     public static event Action tryExit;
     public static event Action boxLifted;
+    public static event Action trySpawn;
     public float playerMassSBox = 3f;
     public float playerMassMBox = 5f;
 
@@ -42,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     private void HandleInteraction()
-    { 
+    {
         if (Input.GetKeyDown(KeyCode.E))
         {
             bool didYouEvenLift;
@@ -53,10 +54,13 @@ public class PlayerInteraction : MonoBehaviour
             }
             else
             {
-                ThrowBox(); 
+                ThrowBox();
             }
-            tryExit?.Invoke();  
+            tryExit?.Invoke();
             boxLifted?.Invoke();
+        }
+        else if (Input.GetKeyDown(KeyCode.Q)) { 
+            trySpawn?.Invoke();
         }
     }
 
