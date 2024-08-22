@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   box: {fileID: 4256294395898403860, guid: 88b5b9e9edd42f54794e36e9928a4ddb, type: 3}
-  spawnHeight: 5
+  spawnHeight: 3
   anotherBox: {fileID: 0}
 --- !u!212 &6783988960025330109
 SpriteRenderer:
@@ -149,7 +149,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3413415}
+  m_Offset: {x: 0.0050554276, y: -0.3413415}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -160,7 +160,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.317317}
+  m_Size: {x: 3.182993, y: 0.317317}
   m_EdgeRadius: 0
 --- !u!61 &3945167912812594332
 BoxCollider2D:
@@ -205,5 +205,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.317317}
+  m_Size: {x: 1.0000038, y: 0.317317}
   m_EdgeRadius: 0
