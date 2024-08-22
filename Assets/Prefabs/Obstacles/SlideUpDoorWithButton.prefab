@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2493536513836046518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2881079124902844999}
+  m_Layer: 0
+  m_Name: Default
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2881079124902844999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2493536513836046518}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18291855, y: 0.649804, z: -4.238308}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7247227779501776075}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4559734366522945340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4271164187682814878}
+  m_Layer: 0
+  m_Name: Pressed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4271164187682814878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4559734366522945340}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18291855, y: 0.24, z: -4.238308}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7247227779501776075}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6003785650585800003
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +150,13 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2802260388745794199, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7796131457083590842, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2881079124902844999}
+    - targetCorrespondingSourceObject: {fileID: 7796131457083590842, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4271164187682814878}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3111885320987557754, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
       insertIndex: -1
@@ -115,6 +183,13 @@ MonoBehaviour:
   ObstacleTriggerButton: 1
   ObstacleUntriggerButton: 0
   ElevatorButton: 0
+  defaultPosition: {fileID: 2881079124902844999}
+  pressedPosition: {fileID: 4271164187682814878}
+--- !u!4 &7247227779501776075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7796131457083590842, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+  m_PrefabInstance: {fileID: 622128992228250737}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8266557584729328548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
