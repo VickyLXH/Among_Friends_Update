@@ -10,6 +10,16 @@ public class WindObstacle : ObstacleBehaviour
     {
         areaEffector = GetComponent<AreaEffector2D>();
     }
+    private void Update()
+    {
+        if (isTriggered)
+        {
+            EnableObstacle();
+        }
+        else {
+            DisableObstacle();
+        }
+    }
     public override void DisableObstacle()
     {
         areaEffector.enabled = false;

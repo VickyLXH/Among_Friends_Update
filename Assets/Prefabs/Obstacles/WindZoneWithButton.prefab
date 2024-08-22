@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4137953098941690411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886054005099360198}
+  m_Layer: 0
+  m_Name: WindZoneWithButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &886054005099360198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137953098941690411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.55005, y: 0.4856249, z: 0.032905083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8094254213483108122}
+  - {fileID: 1914946085916766670}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4467423214497419473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 886054005099360198}
+    m_Modifications:
+    - target: {fileID: 3688955171673106566, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: isTriggered
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8436279
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.196663
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.032905083
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018791699537040267, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+      propertyPath: m_Name
+      value: Windzone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+--- !u!114 &1066988698854864983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3688955171673106566, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+  m_PrefabInstance: {fileID: 4467423214497419473}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f293053139ffa448dc5491d16a26c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &8094254213483108122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5596823066227066827, guid: e05e28fd63db2254aae71ab9c33a42e6, type: 3}
+  m_PrefabInstance: {fileID: 4467423214497419473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6956311033119059483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 886054005099360198}
+    m_Modifications:
+    - target: {fileID: 3111885320987557754, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_Name
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.5110044
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7395563
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.032905083
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2802260388745794199, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3111885320987557754, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5758911548145403373}
+  m_SourcePrefab: {fileID: 100100000, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+--- !u!4 &1914946085916766670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8798495828561289173, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+  m_PrefabInstance: {fileID: 6956311033119059483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5451162257428189537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3111885320987557754, guid: 65c64fbf380243548b0b502b44470b72, type: 3}
+  m_PrefabInstance: {fileID: 6956311033119059483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5758911548145403373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451162257428189537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703843e5d17708c4d9c111dd631ff724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleLinked: {fileID: 1066988698854864983}
+  ObstacleTriggerButton: 1
+  ObstacleUntriggerButton: 0
+  ElevatorButton: 0
