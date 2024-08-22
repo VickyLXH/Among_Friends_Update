@@ -15,6 +15,17 @@ public class ObstacleDoor : ObstacleBehaviour
         doorClosePos = transform.position;
         doorOpenPos = new Vector3(transform.position.x, transform.position.y + 3f, transform.position.z);
     }
+
+    private void Update()
+    {
+        if (isTriggered)
+        {
+            EnableObstacle();
+        }
+        else { 
+            DisableObstacle();
+        }
+    }
     public override void EnableObstacle()
     {
         if (transform.position != doorOpenPos)

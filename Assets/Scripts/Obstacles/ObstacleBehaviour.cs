@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class ObstacleBehaviour : MonoBehaviour
 {
-    internal bool isTriggered;
+    public bool isTriggered;
 
     public virtual void SetTrigger(bool triggerValue)
     {
