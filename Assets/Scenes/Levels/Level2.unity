@@ -4008,7 +4008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3349477741408514609, guid: d96c3c823988f204da6e1a7ecba047c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.92344
+      value: -16.68111
       objectReference: {fileID: 0}
     - target: {fileID: 3349477741408514609, guid: d96c3c823988f204da6e1a7ecba047c9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4016,11 +4016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724902539640850777, guid: d96c3c823988f204da6e1a7ecba047c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.7779
+      value: -14.566235
       objectReference: {fileID: 0}
     - target: {fileID: 4724902539640850777, guid: d96c3c823988f204da6e1a7ecba047c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.76262
+      value: 1.7610502
       objectReference: {fileID: 0}
     - target: {fileID: 5206661741618708559, guid: d96c3c823988f204da6e1a7ecba047c9, type: 3}
       propertyPath: m_IsActive
@@ -25701,7 +25701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
       propertyPath: jumpForce
-      value: 12
+      value: 14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
+      propertyPath: moveSpeed
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 332060035313367970, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
       propertyPath: lowJumpGravity
@@ -25765,7 +25769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7677967931997207509, guid: 475c9157de7ce0a4097f29f98465f275, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
