@@ -1242,11 +1242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c570938faf536db46b9fc69b62c2475e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
-  jumpForce: 12
+  moveSpeed: 6
+  jumpForce: 14.5
   hangTime: 0.5
   jumpBufferLength: 0.5
-  lowJumpGravity: 2
+  lowJumpGravity: 3
   defaultGravity: 3
   groundLayer:
     serializedVersion: 2
