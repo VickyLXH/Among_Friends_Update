@@ -12,6 +12,8 @@ public class ButtonBehaviour : MonoBehaviour
     public bool ObstacleUntriggerButton;
     [Tooltip("If this is checked, other two booleans cannot be checked!!! this button mode need to be held(large box should stay on top) to trigger obstacle")]
     public bool ElevatorButton;
+    public Transform defaultPosition;
+    public Transform pressedPosition;
     float buttonSizeY;
     Vector3 buttonUpPos;
     Vector3 buttonDownPos;
@@ -22,8 +24,8 @@ public class ButtonBehaviour : MonoBehaviour
     void Awake()
     {
         buttonSizeY = transform.localScale.y;
-        buttonUpPos = transform.position;
-        buttonDownPos = new Vector3(transform.position.x, transform.position.y - buttonSizeY, transform.position.z);
+        buttonUpPos = defaultPosition.position;
+        buttonDownPos = pressedPosition.position;
     }
 
     void Update()
