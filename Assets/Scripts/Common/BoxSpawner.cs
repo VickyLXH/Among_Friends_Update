@@ -9,17 +9,17 @@ public class BoxSpawner : MonoBehaviour
     public float spawnHeight;
 
     public GameObject anotherBox;
-    bool QPressed = false;
+    //bool QPressed = false;
 
-    private void Awake()
-    {
-        PlayerInteraction.trySpawn += PlayerInteraction_trySpawn;
-    }
+    //private void Awake()
+    //{
+    //    PlayerInteraction.trySpawn += PlayerInteraction_trySpawn;
+    //}
 
-    private void PlayerInteraction_trySpawn()
-    {
-        QPressed = true;
-    }
+    //private void PlayerInteraction_trySpawn()
+    //{
+    //    QPressed = true;
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -34,10 +34,8 @@ public class BoxSpawner : MonoBehaviour
 
     private void TriggerSpawnBox(Collider2D collision)
     {
-        if (collision.transform.CompareTag("Player") && QPressed)
+        if (collision.transform.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
-            QPressed = false;
-            Debug.Log("11111111111111111111111111111111111111111111111111");
             if (anotherBox == null)
             {
                 Vector2 spawnPosition = transform.position + new Vector3(0, spawnHeight, 0);
